@@ -2,8 +2,6 @@
 
 **Offline, real-time American Sign Language (ASL) to speech translator** built in Python. It combines MediaPipe hand-landmark tracking with a self-trained ONNX gesture-recognition model and Piper text-to-speech to turn hand signs into spoken words — entirely on-device, with no cloud APIs.
 
-[BADGE TO ADD: CI/build status] [![License: MIT](https://img.shields.io/badge/license-MIT-green)](LICENSE) [BADGE TO ADD: Release]
-
 ---
 
 ## Overview
