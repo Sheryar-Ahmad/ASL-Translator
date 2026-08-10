@@ -1,4 +1,5 @@
 import logging
+import platform
 import queue
 import threading
 import time
@@ -128,7 +129,10 @@ class ASLGuiApp:
                 self.capture.release()
             except Exception:
                 pass
-        self.capture = cv2.VideoCapture(int(index))
+        if platform.system() == "Windows":
+            self.capture = cv2.VideoCapture(int(index), cv2.CAP_DSHOW)
+        else:
+            self.capture = cv2.VideoCapture(int(index))
         cam_cfg = self.cfg.get("camera", {})
         if self.capture.isOpened():
             self.capture.set(cv2.CAP_PROP_FRAME_WIDTH, int(cam_cfg.get("width", 640)))
@@ -139,7 +143,12 @@ class ASLGuiApp:
     def list_cameras(max_index: int = 5):
         cams = []
         for i in range(max_index):
-            cap = cv2.VideoCapture(i)
+            cap = cv2.VideoCapture(
+                i,
+                cv2.CAP_DSHOW
+                if platform.system() == "Windows"
+                else cv2.CAP_ANY,
+            )
             if cap.isOpened():
                 cams.append(str(i))
             cap.release()

@@ -54,24 +54,9 @@ DEFAULTS: Dict[str, Any] = {
         "stable_frames": 15,
         "cooldown_frames": 45,
     },
-    "tts": {
-        "engine": "piper",
-        "piper_executable": "piper",
-        "model_path": "models/tts/en_US-lessac-low.onnx",
-        "output_dir": ".cache/tts",
-        "autoplay": True,
-        "device": "",
-        "voice": "",
-    },
     "ui": {
         "window_name": "ASL Translator",
         "show_fps": True,
-    },
-    "sentence": {
-        "auto_speak": True,
-        "complete_pause_ms": 2500,
-        "min_chars": 3,
-        "clear_after_speak": False,
     },
 }
 
