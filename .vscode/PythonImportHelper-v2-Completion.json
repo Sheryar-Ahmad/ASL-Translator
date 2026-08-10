@@ -1,0 +1,992 @@
+[
+    {
+        "label": "json",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "json",
+        "description": "json",
+        "detail": "json",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Any",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Dict",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "List",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "Optional",
+        "importPath": "typing",
+        "description": "typing",
+        "isExtraImport": true,
+        "detail": "typing",
+        "documentation": {}
+    },
+    {
+        "label": "numpy",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "numpy",
+        "description": "numpy",
+        "detail": "numpy",
+        "documentation": {}
+    },
+    {
+        "label": "yaml",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "yaml",
+        "description": "yaml",
+        "detail": "yaml",
+        "documentation": {}
+    },
+    {
+        "label": "queue",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "queue",
+        "description": "queue",
+        "detail": "queue",
+        "documentation": {}
+    },
+    {
+        "label": "threading",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "threading",
+        "description": "threading",
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
+        "label": "time",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "time",
+        "description": "time",
+        "detail": "time",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "Path",
+        "importPath": "pathlib",
+        "description": "pathlib",
+        "isExtraImport": true,
+        "detail": "pathlib",
+        "documentation": {}
+    },
+    {
+        "label": "tkinter",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "ttk",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "font",
+        "importPath": "tkinter",
+        "description": "tkinter",
+        "isExtraImport": true,
+        "detail": "tkinter",
+        "documentation": {}
+    },
+    {
+        "label": "cv2",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "cv2",
+        "description": "cv2",
+        "detail": "cv2",
+        "documentation": {}
+    },
+    {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "ImageDraw",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "ImageTk",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
+        "label": "ASLEngine",
+        "importPath": "app.asl_engine",
+        "description": "app.asl_engine",
+        "isExtraImport": true,
+        "detail": "app.asl_engine",
+        "documentation": {}
+    },
+    {
+        "label": "ASLEngine",
+        "importPath": "app.asl_engine",
+        "description": "app.asl_engine",
+        "isExtraImport": true,
+        "detail": "app.asl_engine",
+        "documentation": {}
+    },
+    {
+        "label": "load_config",
+        "importPath": "app.config",
+        "description": "app.config",
+        "isExtraImport": true,
+        "detail": "app.config",
+        "documentation": {}
+    },
+    {
+        "label": "load_config",
+        "importPath": "app.config",
+        "description": "app.config",
+        "isExtraImport": true,
+        "detail": "app.config",
+        "documentation": {}
+    },
+    {
+        "label": "AutoCommitController",
+        "importPath": "app.text_buffer",
+        "description": "app.text_buffer",
+        "isExtraImport": true,
+        "detail": "app.text_buffer",
+        "documentation": {}
+    },
+    {
+        "label": "TextBuffer",
+        "importPath": "app.text_buffer",
+        "description": "app.text_buffer",
+        "isExtraImport": true,
+        "detail": "app.text_buffer",
+        "documentation": {}
+    },
+    {
+        "label": "AutoCommitController",
+        "importPath": "app.text_buffer",
+        "description": "app.text_buffer",
+        "isExtraImport": true,
+        "detail": "app.text_buffer",
+        "documentation": {}
+    },
+    {
+        "label": "TextBuffer",
+        "importPath": "app.text_buffer",
+        "description": "app.text_buffer",
+        "isExtraImport": true,
+        "detail": "app.text_buffer",
+        "documentation": {}
+    },
+    {
+        "label": "AutoCommitController",
+        "importPath": "app.text_buffer",
+        "description": "app.text_buffer",
+        "isExtraImport": true,
+        "detail": "app.text_buffer",
+        "documentation": {}
+    },
+    {
+        "label": "TextBuffer",
+        "importPath": "app.text_buffer",
+        "description": "app.text_buffer",
+        "isExtraImport": true,
+        "detail": "app.text_buffer",
+        "documentation": {}
+    },
+    {
+        "label": "TTSEngine",
+        "importPath": "app.tts_engine",
+        "description": "app.tts_engine",
+        "isExtraImport": true,
+        "detail": "app.tts_engine",
+        "documentation": {}
+    },
+    {
+        "label": "TTSEngine",
+        "importPath": "app.tts_engine",
+        "description": "app.tts_engine",
+        "isExtraImport": true,
+        "detail": "app.tts_engine",
+        "documentation": {}
+    },
+    {
+        "label": "deque",
+        "importPath": "collections",
+        "description": "collections",
+        "isExtraImport": true,
+        "detail": "collections",
+        "documentation": {}
+    },
+    {
+        "label": "shutil",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "shutil",
+        "description": "shutil",
+        "detail": "shutil",
+        "documentation": {}
+    },
+    {
+        "label": "subprocess",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "subprocess",
+        "description": "subprocess",
+        "detail": "subprocess",
+        "documentation": {}
+    },
+    {
+        "label": "sys",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "sys",
+        "description": "sys",
+        "detail": "sys",
+        "documentation": {}
+    },
+    {
+        "label": "uuid",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "uuid",
+        "description": "uuid",
+        "detail": "uuid",
+        "documentation": {}
+    },
+    {
+        "label": "importlib",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "importlib",
+        "description": "importlib",
+        "detail": "importlib",
+        "documentation": {}
+    },
+    {
+        "label": "argparse",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "argparse",
+        "description": "argparse",
+        "detail": "argparse",
+        "documentation": {}
+    },
+    {
+        "label": "warnings",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "warnings",
+        "description": "warnings",
+        "detail": "warnings",
+        "documentation": {}
+    },
+    {
+        "label": "platform",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "platform",
+        "description": "platform",
+        "detail": "platform",
+        "documentation": {}
+    },
+    {
+        "label": "ASLEngine",
+        "kind": 6,
+        "importPath": "app.asl_engine",
+        "description": "app.asl_engine",
+        "peekOfCode": "class ASLEngine:\n    def __init__(self, cfg: Dict[str, Any]):\n        if cv2 is None:\n            raise ImportError(\"opencv-python is required.\")\n        if mp is None:\n            raise ImportError(\"mediapipe is required.\")\n        self.cfg = cfg or {}\n        self.labels = self._load_labels()\n        self.nothing_label = str(\n            self.cfg.get(\"labels\", {}).get(\"nothing_label\", \"nothing\")",
+        "detail": "app.asl_engine",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "app.asl_engine",
+        "description": "app.asl_engine",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nDEFAULT_LABELS: List[str] = [chr(ord(\"a\") + i) for i in range(26)] + [\n    \"space\",\n    \"delete\",\n    \"nothing\",\n]\nclass ASLEngine:\n    def __init__(self, cfg: Dict[str, Any]):\n        if cv2 is None:\n            raise ImportError(\"opencv-python is required.\")",
+        "detail": "app.asl_engine",
+        "documentation": {}
+    },
+    {
+        "label": "deep_merge",
+        "kind": 2,
+        "importPath": "app.config",
+        "description": "app.config",
+        "peekOfCode": "def deep_merge(base: Dict[str, Any], override: Dict[str, Any]) -> Dict[str, Any]:\n    merged = dict(base)\n    for key, value in override.items():\n        if key in merged and isinstance(merged[key], dict) and isinstance(value, dict):\n            merged[key] = deep_merge(merged[key], value)\n        else:\n            merged[key] = value\n    return merged\ndef load_config(path: str = \"config.yaml\") -> Dict[str, Any]:\n    if not os.path.exists(path):",
+        "detail": "app.config",
+        "documentation": {}
+    },
+    {
+        "label": "load_config",
+        "kind": 2,
+        "importPath": "app.config",
+        "description": "app.config",
+        "peekOfCode": "def load_config(path: str = \"config.yaml\") -> Dict[str, Any]:\n    if not os.path.exists(path):\n        return DEFAULTS\n    with open(path, \"r\", encoding=\"utf-8\") as handle:\n        user_config = yaml.safe_load(handle) or {}\n    return deep_merge(DEFAULTS, user_config)",
+        "detail": "app.config",
+        "documentation": {}
+    },
+    {
+        "label": "ASLGuiApp",
+        "kind": 6,
+        "importPath": "app.gui_app",
+        "description": "app.gui_app",
+        "peekOfCode": "class ASLGuiApp:\n    def __init__(self, root: tk.Tk, cfg: dict):\n        self.root = root\n        self.cfg = cfg\n        self.running = False\n        self.asl = ASLEngine(cfg.get(\"asl\", {}))\n        tts_cfg = cfg.get(\"tts\", {})\n        self.tts = TTSEngine(tts_cfg)\n        self.tts.start()\n        self.tts_model_path = str(tts_cfg.get(\"model_path\", \"\"))",
+        "detail": "app.gui_app",
+        "documentation": {}
+    },
+    {
+        "label": "run_gui",
+        "kind": 2,
+        "importPath": "app.gui_app",
+        "description": "app.gui_app",
+        "peekOfCode": "def run_gui(cfg: dict):\n    root = tk.Tk()\n    app = ASLGuiApp(root, cfg)\n    root.protocol(\"WM_DELETE_WINDOW\", app.on_close)\n    root.mainloop()",
+        "detail": "app.gui_app",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "app.gui_app",
+        "description": "app.gui_app",
+        "peekOfCode": "logger = logging.getLogger(__name__)\n# ── Palette ────────────────────────────────────────────────────────────────\nBG = \"#0d1117\"\nCARD = \"#161b22\"\nCARD2 = \"#1c2333\"\nBORDER = \"#30363d\"\nTEXT = \"#e6edf3\"\nMUTED = \"#8b949e\"\nGREEN = \"#3fb950\"\nBLUE = \"#58a6ff\"",
+        "detail": "app.gui_app",
+        "documentation": {}
+    },
+    {
+        "label": "BG",
+        "kind": 5,
+        "importPath": "app.gui_app",
+        "description": "app.gui_app",
+        "peekOfCode": "BG = \"#0d1117\"\nCARD = \"#161b22\"\nCARD2 = \"#1c2333\"\nBORDER = \"#30363d\"\nTEXT = \"#e6edf3\"\nMUTED = \"#8b949e\"\nGREEN = \"#3fb950\"\nBLUE = \"#58a6ff\"\nPURPLE = \"#bc8cff\"\nGOLD = \"#d29922\"",
+        "detail": "app.gui_app",
+        "documentation": {}
+    },
+    {
+        "label": "CARD",
+        "kind": 5,
+        "importPath": "app.gui_app",
+        "description": "app.gui_app",
+        "peekOfCode": "CARD = \"#161b22\"\nCARD2 = \"#1c2333\"\nBORDER = \"#30363d\"\nTEXT = \"#e6edf3\"\nMUTED = \"#8b949e\"\nGREEN = \"#3fb950\"\nBLUE = \"#58a6ff\"\nPURPLE = \"#bc8cff\"\nGOLD = \"#d29922\"\nRED = \"#f85149\"",
+        "detail": "app.gui_app",
+        "documentation": {}
+    },
+    {
+        "label": "CARD2",
+        "kind": 5,
+        "importPath": "app.gui_app",
+        "description": "app.gui_app",
+        "peekOfCode": "CARD2 = \"#1c2333\"\nBORDER = \"#30363d\"\nTEXT = \"#e6edf3\"\nMUTED = \"#8b949e\"\nGREEN = \"#3fb950\"\nBLUE = \"#58a6ff\"\nPURPLE = \"#bc8cff\"\nGOLD = \"#d29922\"\nRED = \"#f85149\"\nTEAL = \"#39d353\"",
+        "detail": "app.gui_app",
+        "documentation": {}
+    },
+    {
+        "label": "BORDER",
+        "kind": 5,
+        "importPath": "app.gui_app",
+        "description": "app.gui_app",
+        "peekOfCode": "BORDER = \"#30363d\"\nTEXT = \"#e6edf3\"\nMUTED = \"#8b949e\"\nGREEN = \"#3fb950\"\nBLUE = \"#58a6ff\"\nPURPLE = \"#bc8cff\"\nGOLD = \"#d29922\"\nRED = \"#f85149\"\nTEAL = \"#39d353\"\nBTN_START = \"#1a7f37\"",
+        "detail": "app.gui_app",
+        "documentation": {}
+    },
+    {
+        "label": "TEXT",
+        "kind": 5,
+        "importPath": "app.gui_app",
+        "description": "app.gui_app",
+        "peekOfCode": "TEXT = \"#e6edf3\"\nMUTED = \"#8b949e\"\nGREEN = \"#3fb950\"\nBLUE = \"#58a6ff\"\nPURPLE = \"#bc8cff\"\nGOLD = \"#d29922\"\nRED = \"#f85149\"\nTEAL = \"#39d353\"\nBTN_START = \"#1a7f37\"\nBTN_STOP_C = \"#6e2020\"",
+        "detail": "app.gui_app",
+        "documentation": {}
+    },
+    {
+        "label": "MUTED",
+        "kind": 5,
+        "importPath": "app.gui_app",
+        "description": "app.gui_app",
+        "peekOfCode": "MUTED = \"#8b949e\"\nGREEN = \"#3fb950\"\nBLUE = \"#58a6ff\"\nPURPLE = \"#bc8cff\"\nGOLD = \"#d29922\"\nRED = \"#f85149\"\nTEAL = \"#39d353\"\nBTN_START = \"#1a7f37\"\nBTN_STOP_C = \"#6e2020\"\nBTN_SPEAK = \"#1a3a6e\"",
+        "detail": "app.gui_app",
+        "documentation": {}
+    },
+    {
+        "label": "GREEN",
+        "kind": 5,
+        "importPath": "app.gui_app",
+        "description": "app.gui_app",
+        "peekOfCode": "GREEN = \"#3fb950\"\nBLUE = \"#58a6ff\"\nPURPLE = \"#bc8cff\"\nGOLD = \"#d29922\"\nRED = \"#f85149\"\nTEAL = \"#39d353\"\nBTN_START = \"#1a7f37\"\nBTN_STOP_C = \"#6e2020\"\nBTN_SPEAK = \"#1a3a6e\"\nBTN_SPKSEN = \"#3b1f6e\"",
+        "detail": "app.gui_app",
+        "documentation": {}
+    },
+    {
+        "label": "BLUE",
+        "kind": 5,
+        "importPath": "app.gui_app",
+        "description": "app.gui_app",
+        "peekOfCode": "BLUE = \"#58a6ff\"\nPURPLE = \"#bc8cff\"\nGOLD = \"#d29922\"\nRED = \"#f85149\"\nTEAL = \"#39d353\"\nBTN_START = \"#1a7f37\"\nBTN_STOP_C = \"#6e2020\"\nBTN_SPEAK = \"#1a3a6e\"\nBTN_SPKSEN = \"#3b1f6e\"\nBTN_CLR = \"#5a3e00\"",
+        "detail": "app.gui_app",
+        "documentation": {}
+    },
+    {
+        "label": "PURPLE",
+        "kind": 5,
+        "importPath": "app.gui_app",
+        "description": "app.gui_app",
+        "peekOfCode": "PURPLE = \"#bc8cff\"\nGOLD = \"#d29922\"\nRED = \"#f85149\"\nTEAL = \"#39d353\"\nBTN_START = \"#1a7f37\"\nBTN_STOP_C = \"#6e2020\"\nBTN_SPEAK = \"#1a3a6e\"\nBTN_SPKSEN = \"#3b1f6e\"\nBTN_CLR = \"#5a3e00\"\nBTN_SPACE = \"#1a4a6e\"",
+        "detail": "app.gui_app",
+        "documentation": {}
+    },
+    {
+        "label": "GOLD",
+        "kind": 5,
+        "importPath": "app.gui_app",
+        "description": "app.gui_app",
+        "peekOfCode": "GOLD = \"#d29922\"\nRED = \"#f85149\"\nTEAL = \"#39d353\"\nBTN_START = \"#1a7f37\"\nBTN_STOP_C = \"#6e2020\"\nBTN_SPEAK = \"#1a3a6e\"\nBTN_SPKSEN = \"#3b1f6e\"\nBTN_CLR = \"#5a3e00\"\nBTN_SPACE = \"#1a4a6e\"\nclass ASLGuiApp:",
+        "detail": "app.gui_app",
+        "documentation": {}
+    },
+    {
+        "label": "RED",
+        "kind": 5,
+        "importPath": "app.gui_app",
+        "description": "app.gui_app",
+        "peekOfCode": "RED = \"#f85149\"\nTEAL = \"#39d353\"\nBTN_START = \"#1a7f37\"\nBTN_STOP_C = \"#6e2020\"\nBTN_SPEAK = \"#1a3a6e\"\nBTN_SPKSEN = \"#3b1f6e\"\nBTN_CLR = \"#5a3e00\"\nBTN_SPACE = \"#1a4a6e\"\nclass ASLGuiApp:\n    def __init__(self, root: tk.Tk, cfg: dict):",
+        "detail": "app.gui_app",
+        "documentation": {}
+    },
+    {
+        "label": "TEAL",
+        "kind": 5,
+        "importPath": "app.gui_app",
+        "description": "app.gui_app",
+        "peekOfCode": "TEAL = \"#39d353\"\nBTN_START = \"#1a7f37\"\nBTN_STOP_C = \"#6e2020\"\nBTN_SPEAK = \"#1a3a6e\"\nBTN_SPKSEN = \"#3b1f6e\"\nBTN_CLR = \"#5a3e00\"\nBTN_SPACE = \"#1a4a6e\"\nclass ASLGuiApp:\n    def __init__(self, root: tk.Tk, cfg: dict):\n        self.root = root",
+        "detail": "app.gui_app",
+        "documentation": {}
+    },
+    {
+        "label": "BTN_START",
+        "kind": 5,
+        "importPath": "app.gui_app",
+        "description": "app.gui_app",
+        "peekOfCode": "BTN_START = \"#1a7f37\"\nBTN_STOP_C = \"#6e2020\"\nBTN_SPEAK = \"#1a3a6e\"\nBTN_SPKSEN = \"#3b1f6e\"\nBTN_CLR = \"#5a3e00\"\nBTN_SPACE = \"#1a4a6e\"\nclass ASLGuiApp:\n    def __init__(self, root: tk.Tk, cfg: dict):\n        self.root = root\n        self.cfg = cfg",
+        "detail": "app.gui_app",
+        "documentation": {}
+    },
+    {
+        "label": "BTN_STOP_C",
+        "kind": 5,
+        "importPath": "app.gui_app",
+        "description": "app.gui_app",
+        "peekOfCode": "BTN_STOP_C = \"#6e2020\"\nBTN_SPEAK = \"#1a3a6e\"\nBTN_SPKSEN = \"#3b1f6e\"\nBTN_CLR = \"#5a3e00\"\nBTN_SPACE = \"#1a4a6e\"\nclass ASLGuiApp:\n    def __init__(self, root: tk.Tk, cfg: dict):\n        self.root = root\n        self.cfg = cfg\n        self.running = False",
+        "detail": "app.gui_app",
+        "documentation": {}
+    },
+    {
+        "label": "BTN_SPEAK",
+        "kind": 5,
+        "importPath": "app.gui_app",
+        "description": "app.gui_app",
+        "peekOfCode": "BTN_SPEAK = \"#1a3a6e\"\nBTN_SPKSEN = \"#3b1f6e\"\nBTN_CLR = \"#5a3e00\"\nBTN_SPACE = \"#1a4a6e\"\nclass ASLGuiApp:\n    def __init__(self, root: tk.Tk, cfg: dict):\n        self.root = root\n        self.cfg = cfg\n        self.running = False\n        self.asl = ASLEngine(cfg.get(\"asl\", {}))",
+        "detail": "app.gui_app",
+        "documentation": {}
+    },
+    {
+        "label": "BTN_SPKSEN",
+        "kind": 5,
+        "importPath": "app.gui_app",
+        "description": "app.gui_app",
+        "peekOfCode": "BTN_SPKSEN = \"#3b1f6e\"\nBTN_CLR = \"#5a3e00\"\nBTN_SPACE = \"#1a4a6e\"\nclass ASLGuiApp:\n    def __init__(self, root: tk.Tk, cfg: dict):\n        self.root = root\n        self.cfg = cfg\n        self.running = False\n        self.asl = ASLEngine(cfg.get(\"asl\", {}))\n        tts_cfg = cfg.get(\"tts\", {})",
+        "detail": "app.gui_app",
+        "documentation": {}
+    },
+    {
+        "label": "BTN_CLR",
+        "kind": 5,
+        "importPath": "app.gui_app",
+        "description": "app.gui_app",
+        "peekOfCode": "BTN_CLR = \"#5a3e00\"\nBTN_SPACE = \"#1a4a6e\"\nclass ASLGuiApp:\n    def __init__(self, root: tk.Tk, cfg: dict):\n        self.root = root\n        self.cfg = cfg\n        self.running = False\n        self.asl = ASLEngine(cfg.get(\"asl\", {}))\n        tts_cfg = cfg.get(\"tts\", {})\n        self.tts = TTSEngine(tts_cfg)",
+        "detail": "app.gui_app",
+        "documentation": {}
+    },
+    {
+        "label": "BTN_SPACE",
+        "kind": 5,
+        "importPath": "app.gui_app",
+        "description": "app.gui_app",
+        "peekOfCode": "BTN_SPACE = \"#1a4a6e\"\nclass ASLGuiApp:\n    def __init__(self, root: tk.Tk, cfg: dict):\n        self.root = root\n        self.cfg = cfg\n        self.running = False\n        self.asl = ASLEngine(cfg.get(\"asl\", {}))\n        tts_cfg = cfg.get(\"tts\", {})\n        self.tts = TTSEngine(tts_cfg)\n        self.tts.start()",
+        "detail": "app.gui_app",
+        "documentation": {}
+    },
+    {
+        "label": "TextBuffer",
+        "kind": 6,
+        "importPath": "app.text_buffer",
+        "description": "app.text_buffer",
+        "peekOfCode": "class TextBuffer:\n    def __init__(\n        self,\n        space_label: str = \"space\",\n        delete_label: str = \"delete\",\n        nothing_label: str = \"nothing\",\n    ):\n        self.space_label = space_label.lower().strip()\n        self.delete_label = delete_label.lower().strip()\n        self.nothing_label = nothing_label.lower().strip()",
+        "detail": "app.text_buffer",
+        "documentation": {}
+    },
+    {
+        "label": "AutoCommitController",
+        "kind": 6,
+        "importPath": "app.text_buffer",
+        "description": "app.text_buffer",
+        "peekOfCode": "class AutoCommitController:\n    def __init__(self, asl_cfg: Dict[str, Any]):\n        auto_cfg = asl_cfg.get(\"auto\", {})\n        labels_cfg = asl_cfg.get(\"labels\", {})\n        self.window = int(auto_cfg.get(\"vote_window\", 9))\n        self.stable_ms = int(auto_cfg.get(\"stable_ms\", 900))\n        self.reset_ms = int(auto_cfg.get(\"reset_ms\", 1400))\n        self.threshold = float(asl_cfg.get(\"confidence_threshold\", 0.65))\n        self.nothing_label = str(labels_cfg.get(\"nothing_label\", \"nothing\")).lower()\n        self.history = deque(maxlen=self.window)",
+        "detail": "app.text_buffer",
+        "documentation": {}
+    },
+    {
+        "label": "TTSEngine",
+        "kind": 6,
+        "importPath": "app.tts_engine",
+        "description": "app.tts_engine",
+        "peekOfCode": "class TTSEngine:\n    def __init__(self, cfg: Dict[str, Any]):\n        self.cfg = cfg or {}\n        self.model_path = str(self.cfg.get(\"model_path\", \"\"))\n        self.output_dir = str(self.cfg.get(\"output_dir\", \".cache/tts\"))\n        self.autoplay = bool(self.cfg.get(\"autoplay\", True))\n        self.piper_executable = str(self.cfg.get(\"piper_executable\", \"piper\"))\n        os.makedirs(self.output_dir, exist_ok=True)\n        self.queue: \"queue.Queue[Optional[str]]\" = queue.Queue()\n        self.thread: Optional[threading.Thread] = None",
+        "detail": "app.tts_engine",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "app.tts_engine",
+        "description": "app.tts_engine",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nclass TTSEngine:\n    def __init__(self, cfg: Dict[str, Any]):\n        self.cfg = cfg or {}\n        self.model_path = str(self.cfg.get(\"model_path\", \"\"))\n        self.output_dir = str(self.cfg.get(\"output_dir\", \".cache/tts\"))\n        self.autoplay = bool(self.cfg.get(\"autoplay\", True))\n        self.piper_executable = str(self.cfg.get(\"piper_executable\", \"piper\"))\n        os.makedirs(self.output_dir, exist_ok=True)\n        self.queue: \"queue.Queue[Optional[str]]\" = queue.Queue()",
+        "detail": "app.tts_engine",
+        "documentation": {}
+    },
+    {
+        "label": "add_check",
+        "kind": 2,
+        "importPath": "scripts.check_env",
+        "description": "scripts.check_env",
+        "peekOfCode": "def add_check(name, ok, critical=True, message=\"\"):\n    CHECKS.append(\n        {\n            \"name\": name,\n            \"ok\": bool(ok),\n            \"critical\": bool(critical),\n            \"message\": message,\n        }\n    )\ndef check_import(module_name, critical=True):",
+        "detail": "scripts.check_env",
+        "documentation": {}
+    },
+    {
+        "label": "check_import",
+        "kind": 2,
+        "importPath": "scripts.check_env",
+        "description": "scripts.check_env",
+        "peekOfCode": "def check_import(module_name, critical=True):\n    try:\n        importlib.import_module(module_name)\n        add_check(f\"import {module_name}\", True, critical)\n    except Exception as exc:\n        add_check(f\"import {module_name}\", False, critical, str(exc))\ndef check_piper():\n    piper_path = shutil.which(\"piper\")\n    if piper_path:\n        add_check(\"piper executable\", True, True, piper_path)",
+        "detail": "scripts.check_env",
+        "documentation": {}
+    },
+    {
+        "label": "check_piper",
+        "kind": 2,
+        "importPath": "scripts.check_env",
+        "description": "scripts.check_env",
+        "peekOfCode": "def check_piper():\n    piper_path = shutil.which(\"piper\")\n    if piper_path:\n        add_check(\"piper executable\", True, True, piper_path)\n        return\n    try:\n        process = subprocess.run(\n            [sys.executable, \"-m\", \"piper\", \"--help\"],\n            stdout=subprocess.PIPE,\n            stderr=subprocess.PIPE,",
+        "detail": "scripts.check_env",
+        "documentation": {}
+    },
+    {
+        "label": "get_camera_index_from_config",
+        "kind": 2,
+        "importPath": "scripts.check_env",
+        "description": "scripts.check_env",
+        "peekOfCode": "def get_camera_index_from_config():\n    config_path = Path(\"config.yaml\")\n    if not config_path.exists():\n        return 0\n    try:\n        import yaml\n        cfg = yaml.safe_load(config_path.read_text(encoding=\"utf-8\")) or {}\n        return int(cfg.get(\"camera\", {}).get(\"index\", 0))\n    except Exception:\n        return 0",
+        "detail": "scripts.check_env",
+        "documentation": {}
+    },
+    {
+        "label": "check_camera",
+        "kind": 2,
+        "importPath": "scripts.check_env",
+        "description": "scripts.check_env",
+        "peekOfCode": "def check_camera():\n    try:\n        import cv2\n    except Exception as exc:\n        add_check(\"camera read\", False, False, str(exc))\n        return\n    camera_index = get_camera_index_from_config()\n    try:\n        capture = cv2.VideoCapture(camera_index)\n        opened = capture.isOpened()",
+        "detail": "scripts.check_env",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "scripts.check_env",
+        "description": "scripts.check_env",
+        "peekOfCode": "def main():\n    version_ok = (3, 10) <= sys.version_info[:2] < (3, 12)\n    add_check(\n        \"Python 3.10 or 3.11\",\n        version_ok,\n        True,\n        f\"Found Python {sys.version.split()[0]}\",\n    )\n    required_modules = [\n        \"cv2\",",
+        "detail": "scripts.check_env",
+        "documentation": {}
+    },
+    {
+        "label": "CHECKS",
+        "kind": 5,
+        "importPath": "scripts.check_env",
+        "description": "scripts.check_env",
+        "peekOfCode": "CHECKS = []\ndef add_check(name, ok, critical=True, message=\"\"):\n    CHECKS.append(\n        {\n            \"name\": name,\n            \"ok\": bool(ok),\n            \"critical\": bool(critical),\n            \"message\": message,\n        }\n    )",
+        "detail": "scripts.check_env",
+        "documentation": {}
+    },
+    {
+        "label": "download_file",
+        "kind": 2,
+        "importPath": "scripts.download_models",
+        "description": "scripts.download_models",
+        "peekOfCode": "def download_file(url: str, path: Path) -> None:\n    import urllib.request\n    path.parent.mkdir(parents=True, exist_ok=True)\n    if path.exists():\n        print(f\"Skip existing: {path}\")\n        return\n    print(f\"Downloading: {url}\")\n    print(f\"To: {path}\")\n    urllib.request.urlretrieve(url, path)\n    print(f\"Saved: {path}\")",
+        "detail": "scripts.download_models",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "scripts.download_models",
+        "description": "scripts.download_models",
+        "peekOfCode": "def main() -> None:\n    TTS_DIR.mkdir(parents=True, exist_ok=True)\n    print(\"\\nDownloading TTS model...\")\n    for url, path in TTS_FILES:\n        download_file(url, path)\n    print(\"\\nModel download step complete.\")\n    print(\"Next command:\")\n    print(\"  python scripts/check_env.py --tts\")\nif __name__ == \"__main__\":\n    main()",
+        "detail": "scripts.download_models",
+        "documentation": {}
+    },
+    {
+        "label": "TTS_DIR",
+        "kind": 5,
+        "importPath": "scripts.download_models",
+        "description": "scripts.download_models",
+        "peekOfCode": "TTS_DIR = Path(\"models/tts\")\nTTS_FILES = [\n    (\n        \"https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_US/lessac/high/en_US-lessac-high.onnx\",\n        TTS_DIR / \"en_US-lessac-high.onnx\",\n    )\n]\ndef download_file(url: str, path: Path) -> None:\n    import urllib.request\n    path.parent.mkdir(parents=True, exist_ok=True)",
+        "detail": "scripts.download_models",
+        "documentation": {}
+    },
+    {
+        "label": "TTS_FILES",
+        "kind": 5,
+        "importPath": "scripts.download_models",
+        "description": "scripts.download_models",
+        "peekOfCode": "TTS_FILES = [\n    (\n        \"https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_US/lessac/high/en_US-lessac-high.onnx\",\n        TTS_DIR / \"en_US-lessac-high.onnx\",\n    )\n]\ndef download_file(url: str, path: Path) -> None:\n    import urllib.request\n    path.parent.mkdir(parents=True, exist_ok=True)\n    if path.exists():",
+        "detail": "scripts.download_models",
+        "documentation": {}
+    },
+    {
+        "label": "load_csv",
+        "kind": 2,
+        "importPath": "scripts.train_from_csv",
+        "description": "scripts.train_from_csv",
+        "peekOfCode": "def load_csv(csv_path: Path):\n    try:\n        import pandas as pd\n    except ImportError:\n        sys.exit(\"pip install pandas\")\n    df = pd.read_csv(csv_path)\n    if \"Sign\" not in df.columns:\n        sys.exit(\"CSV must contain a 'Sign' column.\")\n    feature_columns = [c for c in df.columns if c != \"Sign\"]\n    X = df[feature_columns].astype(np.float32).values",
+        "detail": "scripts.train_from_csv",
+        "documentation": {}
+    },
+    {
+        "label": "train",
+        "kind": 2,
+        "importPath": "scripts.train_from_csv",
+        "description": "scripts.train_from_csv",
+        "peekOfCode": "def train(X, y):\n    from sklearn.model_selection import train_test_split\n    from sklearn.neural_network import MLPClassifier\n    from sklearn.preprocessing import LabelEncoder\n    le = LabelEncoder()\n    y_enc = le.fit_transform(y)\n    X_train, X_val, y_train, y_val = train_test_split(\n        X,\n        y_enc,\n        test_size=0.15,",
+        "detail": "scripts.train_from_csv",
+        "documentation": {}
+    },
+    {
+        "label": "export_onnx",
+        "kind": 2,
+        "importPath": "scripts.train_from_csv",
+        "description": "scripts.train_from_csv",
+        "peekOfCode": "def export_onnx(clf, le, feature_count):\n    try:\n        from skl2onnx import convert_sklearn\n        from skl2onnx.common.data_types import FloatTensorType\n    except ImportError:\n        sys.exit(\"pip install skl2onnx\")\n    MODELS_DIR.mkdir(parents=True, exist_ok=True)\n    onnx_model = convert_sklearn(\n        clf,\n        initial_types=[(\"float_input\", FloatTensorType([None, feature_count]))],",
+        "detail": "scripts.train_from_csv",
+        "documentation": {}
+    },
+    {
+        "label": "patch_config",
+        "kind": 2,
+        "importPath": "scripts.train_from_csv",
+        "description": "scripts.train_from_csv",
+        "peekOfCode": "def patch_config():\n    try:\n        import yaml\n    except ImportError:\n        return\n    if not CONFIG_PATH.exists():\n        return\n    cfg = yaml.safe_load(CONFIG_PATH.read_text()) or {}\n    asl = cfg.setdefault(\"asl\", {})\n    asl[\"input_type\"] = \"landmarks\"",
+        "detail": "scripts.train_from_csv",
+        "documentation": {}
+    },
+    {
+        "label": "verify",
+        "kind": 2,
+        "importPath": "scripts.train_from_csv",
+        "description": "scripts.train_from_csv",
+        "peekOfCode": "def verify(feature_count, labels):\n    try:\n        import onnxruntime as ort\n    except ImportError:\n        return\n    session = ort.InferenceSession(\n        str(MODEL_OUT),\n        providers=[\"CPUExecutionProvider\"],\n    )\n    dummy = np.zeros((1, feature_count), dtype=np.float32)",
+        "detail": "scripts.train_from_csv",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "scripts.train_from_csv",
+        "description": "scripts.train_from_csv",
+        "peekOfCode": "def main():\n    parser = argparse.ArgumentParser()\n    parser.add_argument(\n        \"--csv\",\n        default=\"archive/sign_data.csv\",\n    )\n    args = parser.parse_args()\n    csv_path = Path(args.csv)\n    if not csv_path.exists():\n        sys.exit(f\"CSV not found: {csv_path}\")",
+        "detail": "scripts.train_from_csv",
+        "documentation": {}
+    },
+    {
+        "label": "MODELS_DIR",
+        "kind": 5,
+        "importPath": "scripts.train_from_csv",
+        "description": "scripts.train_from_csv",
+        "peekOfCode": "MODELS_DIR = Path(\"models/asl\")\nMODEL_OUT = MODELS_DIR / \"asl_landmarks.onnx\"\nLABELS_OUT = MODELS_DIR / \"labels.txt\"\nCONFIG_PATH = Path(\"config.yaml\")\ndef load_csv(csv_path: Path):\n    try:\n        import pandas as pd\n    except ImportError:\n        sys.exit(\"pip install pandas\")\n    df = pd.read_csv(csv_path)",
+        "detail": "scripts.train_from_csv",
+        "documentation": {}
+    },
+    {
+        "label": "MODEL_OUT",
+        "kind": 5,
+        "importPath": "scripts.train_from_csv",
+        "description": "scripts.train_from_csv",
+        "peekOfCode": "MODEL_OUT = MODELS_DIR / \"asl_landmarks.onnx\"\nLABELS_OUT = MODELS_DIR / \"labels.txt\"\nCONFIG_PATH = Path(\"config.yaml\")\ndef load_csv(csv_path: Path):\n    try:\n        import pandas as pd\n    except ImportError:\n        sys.exit(\"pip install pandas\")\n    df = pd.read_csv(csv_path)\n    if \"Sign\" not in df.columns:",
+        "detail": "scripts.train_from_csv",
+        "documentation": {}
+    },
+    {
+        "label": "LABELS_OUT",
+        "kind": 5,
+        "importPath": "scripts.train_from_csv",
+        "description": "scripts.train_from_csv",
+        "peekOfCode": "LABELS_OUT = MODELS_DIR / \"labels.txt\"\nCONFIG_PATH = Path(\"config.yaml\")\ndef load_csv(csv_path: Path):\n    try:\n        import pandas as pd\n    except ImportError:\n        sys.exit(\"pip install pandas\")\n    df = pd.read_csv(csv_path)\n    if \"Sign\" not in df.columns:\n        sys.exit(\"CSV must contain a 'Sign' column.\")",
+        "detail": "scripts.train_from_csv",
+        "documentation": {}
+    },
+    {
+        "label": "CONFIG_PATH",
+        "kind": 5,
+        "importPath": "scripts.train_from_csv",
+        "description": "scripts.train_from_csv",
+        "peekOfCode": "CONFIG_PATH = Path(\"config.yaml\")\ndef load_csv(csv_path: Path):\n    try:\n        import pandas as pd\n    except ImportError:\n        sys.exit(\"pip install pandas\")\n    df = pd.read_csv(csv_path)\n    if \"Sign\" not in df.columns:\n        sys.exit(\"CSV must contain a 'Sign' column.\")\n    feature_columns = [c for c in df.columns if c != \"Sign\"]",
+        "detail": "scripts.train_from_csv",
+        "documentation": {}
+    },
+    {
+        "label": "test_commit_letters",
+        "kind": 2,
+        "importPath": "tests.test_text_buffer",
+        "description": "tests.test_text_buffer",
+        "peekOfCode": "def test_commit_letters():\n    buffer = TextBuffer()\n    buffer.commit_label(\"a\")\n    buffer.commit_label(\"b\")\n    buffer.commit_label(\"c\")\n    assert buffer.text == \"abc\"\ndef test_space_and_delete():\n    buffer = TextBuffer()\n    buffer.commit_label(\"h\")\n    buffer.commit_label(\"i\")",
+        "detail": "tests.test_text_buffer",
+        "documentation": {}
+    },
+    {
+        "label": "test_space_and_delete",
+        "kind": 2,
+        "importPath": "tests.test_text_buffer",
+        "description": "tests.test_text_buffer",
+        "peekOfCode": "def test_space_and_delete():\n    buffer = TextBuffer()\n    buffer.commit_label(\"h\")\n    buffer.commit_label(\"i\")\n    buffer.commit_label(\"space\")\n    buffer.commit_label(\"o\")\n    buffer.commit_label(\"k\")\n    assert buffer.text == \"hi ok\"\n    buffer.backspace()\n    assert buffer.text == \"hi o\"",
+        "detail": "tests.test_text_buffer",
+        "documentation": {}
+    },
+    {
+        "label": "test_clear",
+        "kind": 2,
+        "importPath": "tests.test_text_buffer",
+        "description": "tests.test_text_buffer",
+        "peekOfCode": "def test_clear():\n    buffer = TextBuffer()\n    buffer.commit_label(\"a\")\n    buffer.clear()\n    assert buffer.text == \"\"\ndef test_word_label_appends_word_and_space():\n    buffer = TextBuffer()\n    buffer.commit_label(\"hello\")\n    buffer.commit_label(\"world\")\n    assert buffer.text == \"hello world\"",
+        "detail": "tests.test_text_buffer",
+        "documentation": {}
+    },
+    {
+        "label": "test_word_label_appends_word_and_space",
+        "kind": 2,
+        "importPath": "tests.test_text_buffer",
+        "description": "tests.test_text_buffer",
+        "peekOfCode": "def test_word_label_appends_word_and_space():\n    buffer = TextBuffer()\n    buffer.commit_label(\"hello\")\n    buffer.commit_label(\"world\")\n    assert buffer.text == \"hello world\"\ndef test_auto_commit_controller():\n    cfg = {\n        \"confidence_threshold\": 0.5,\n        \"labels\": {\n            \"nothing_label\": \"nothing\",",
+        "detail": "tests.test_text_buffer",
+        "documentation": {}
+    },
+    {
+        "label": "test_auto_commit_controller",
+        "kind": 2,
+        "importPath": "tests.test_text_buffer",
+        "description": "tests.test_text_buffer",
+        "peekOfCode": "def test_auto_commit_controller():\n    cfg = {\n        \"confidence_threshold\": 0.5,\n        \"labels\": {\n            \"nothing_label\": \"nothing\",\n        },\n        \"auto\": {\n            \"vote_window\": 5,\n            \"stable_ms\": 100,\n            \"reset_ms\": 100,",
+        "detail": "tests.test_text_buffer",
+        "documentation": {}
+    },
+    {
+        "label": "draw_hud",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def draw_hud(frame, cfg, prediction, text_buffer, fps):\n    height, width = frame.shape[:2]\n    label = prediction.get(\"label\", \"\")\n    confidence = float(prediction.get(\"confidence\", 0.0))\n    sentence = text_buffer.text\n    cv2.rectangle(frame, (0, 0), (width, 70), (0, 0, 0), -1)\n    cv2.putText(\n        frame,\n        f\"Sign: {label} ({confidence:.2f})\",\n        (10, 25),",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "run_speak",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def run_speak(cfg, text):\n    tts = TTSEngine(cfg.get(\"tts\", {}))\n    tts.start()\n    try:\n        tts.speak(text)\n        tts.wait_idle()\n    finally:\n        tts.stop()\ndef run_camera(cfg):\n    tts = TTSEngine(cfg.get(\"tts\", {}))",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "run_camera",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def run_camera(cfg):\n    tts = TTSEngine(cfg.get(\"tts\", {}))\n    tts.start()\n    asl = ASLEngine(cfg.get(\"asl\", {}))\n    labels_cfg = cfg.get(\"asl\", {}).get(\"labels\", {})\n    text_buffer = TextBuffer(\n        space_label=labels_cfg.get(\"space_label\", \"space\"),\n        delete_label=labels_cfg.get(\"delete_label\", \"delete\"),\n        nothing_label=labels_cfg.get(\"nothing_label\", \"nothing\"),\n    )",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "def main():\n    parser = argparse.ArgumentParser(description=\"Offline ASL to text and speech MVP\")\n    parser.add_argument(\n        \"--config\",\n        default=\"config.yaml\",\n        help=\"Path to config.yaml\",\n    )\n    parser.add_argument(\n        \"--speak\",\n        default=\"\",",
+        "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "logger = logging.getLogger(\"main\")\ndef draw_hud(frame, cfg, prediction, text_buffer, fps):\n    height, width = frame.shape[:2]\n    label = prediction.get(\"label\", \"\")\n    confidence = float(prediction.get(\"confidence\", 0.0))\n    sentence = text_buffer.text\n    cv2.rectangle(frame, (0, 0), (width, 70), (0, 0, 0), -1)\n    cv2.putText(\n        frame,\n        f\"Sign: {label} ({confidence:.2f})\",",
+        "detail": "main",
+        "documentation": {}
+    }
+]

@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.pyc
+.cache/
+models/tts/*.onnx
+models/tts/*.json
+.DS_Store
+./pytest_cache

@@ -1,0 +1,10 @@
+numpy>=1.24,<2.0
+opencv-python>=4.8
+mediapipe>=0.10.9
+onnxruntime>=1.16
+piper-tts>=1.2.0
+Pillow>=10.0
+pygame>=2.5
+PyYAML>=6.0
+pytest>=8.0
+huggingface_hub>=0.24,<1.0
