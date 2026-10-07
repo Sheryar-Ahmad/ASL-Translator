@@ -39,7 +39,7 @@ def main() -> None:
 
     print("\nModel download step complete.")
     print("Next command:")
-    print("  python scripts/check_env.py --tts")
+    print("  python scripts/check_env.py")
 
 
 if __name__ == "__main__":

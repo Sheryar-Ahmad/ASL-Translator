@@ -1,10 +1,15 @@
+import argparse
 import importlib
-import os
 import shutil
 import subprocess
 import sys
 from pathlib import Path
 
+
+if __package__ in (None, ""):
+    sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from app.config import load_config
 
 CHECKS = []
 
@@ -28,8 +33,8 @@ def check_import(module_name, critical=True):
         add_check(f"import {module_name}", False, critical, str(exc))
 
 
-def check_piper():
-    piper_path = shutil.which("piper")
+def check_piper(executable="piper"):
+    piper_path = shutil.which(executable)
 
     if piper_path:
         add_check("piper executable", True, True, piper_path)
@@ -52,30 +57,12 @@ def check_piper():
         add_check("python -m piper", False, True, str(exc))
 
 
-def get_camera_index_from_config():
-    config_path = Path("config.yaml")
-
-    if not config_path.exists():
-        return 0
-
-    try:
-        import yaml
-
-        cfg = yaml.safe_load(config_path.read_text(encoding="utf-8")) or {}
-        return int(cfg.get("camera", {}).get("index", 0))
-
-    except Exception:
-        return 0
-
-
-def check_camera():
+def check_camera(camera_index=0):
     try:
         import cv2
     except Exception as exc:
         add_check("camera read", False, False, str(exc))
         return
-
-    camera_index = get_camera_index_from_config()
 
     try:
         capture = cv2.VideoCapture(camera_index)
@@ -101,10 +88,16 @@ def check_camera():
 
 
 def main():
-    version_ok = (3, 10) <= sys.version_info[:2] < (3, 12)
+    parser = argparse.ArgumentParser(description="Check configured ASL runtime dependencies and models.")
+    parser.add_argument("--config", default="config.yaml", help="Runtime configuration path.")
+    parser.add_argument("--camera", action="store_true", help="Also test webcam capture.")
+    args = parser.parse_args()
+    cfg = load_config(args.config)
+    CHECKS.clear()
+    version_ok = sys.version_info[:2] == (3, 12)
 
     add_check(
-        "Python 3.10 or 3.11",
+        "Python 3.12",
         version_ok,
         True,
         f"Found Python {sys.version.split()[0]}",
@@ -123,55 +116,47 @@ def main():
     for module_name in required_modules:
         check_import(module_name, critical=True)
 
-    check_import("huggingface_hub", critical=False)
-
-    check_piper()
+    check_piper(cfg["tts"].get("piper_executable", "piper"))
 
     add_check(
-        "config.yaml exists",
-        Path("config.yaml").exists(),
+        "Configuration exists",
+        Path(args.config).is_file(),
         False,
         "Create config.yaml from the project files.",
     )
 
     add_check(
         "TTS model exists",
-        Path("models/tts/en_US-lessac-low.onnx").exists(),
+        Path(cfg["tts"]["model_path"]).is_file(),
         True,
         "Run: python scripts/download_models.py",
     )
 
     add_check(
         "TTS JSON config exists",
-        Path("models/tts/en_US-lessac-low.onnx.json").exists(),
-        False,
+        Path(cfg["tts"]["model_path"] + ".json").is_file(),
+        True,
         "Run: python scripts/download_models.py",
     )
 
-    asl_dir = Path("models/asl")
-    asl_model_found = False
-
-    if asl_dir.exists():
-        asl_model_found = Path("models/asl/asl_landmarks.onnx").exists() or any(
-            asl_dir.rglob("*.onnx")
-        )
+    asl_model_found = Path(cfg["asl"]["model_path"]).is_file()
 
     add_check(
         "ASL model exists",
         asl_model_found,
         False,
-        "App runs in dummy mode until you download or add a real ASL ONNX model.",
+        "Recognition is disabled until you add a model or run scripts/train_from_csv.py.",
     )
 
     add_check(
         "ASL labels exist",
-        Path("models/asl/labels.txt").exists(),
-        False,
-        "Run: python scripts/download_models.py",
+        Path(cfg["asl"]["labels_path"]).is_file(),
+        asl_model_found,
+        "Train the ASL model or restore its matching labels.txt.",
     )
 
-    if "--camera" in sys.argv:
-        check_camera()
+    if args.camera:
+        check_camera(int(cfg["camera"]["index"]))
 
     failed_critical = [
         check for check in CHECKS if not check["ok"] and check["critical"]

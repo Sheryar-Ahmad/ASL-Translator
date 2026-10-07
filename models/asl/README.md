@@ -1,34 +1,18 @@
-# ASL Model Directory
+# ASL model
 
-The automatic downloader places downloaded ASL models here:
+The application uses these versioned files together:
 
-    models/asl/hf_model/
+- `asl_landmarks.onnx`: the trained ONNX classifier.
+- `labels.txt`: one label per line, in model class-index order.
 
-It also creates:
+The bundled model takes float32 input of shape `[batch, 210]`. Each row contains the pairwise Euclidean distances between the 21 MediaPipe hand landmarks using x, y and z coordinates. The configured runtime processes one hand per frame.
 
-    models/asl/labels.txt
+To retrain from the included dataset, run this from the repository root:
 
-If automatic download fails, manually place a pretrained ASL ONNX model
-in this folder and update config.yaml.
+```bash
+uv run scripts/train_from_csv.py --csv archive/sign_data.csv
+```
 
-## Landmark model contract
+Training exports the model and labels into this directory and updates `config.yaml`. Replace both files together when changing models. Missing models disable GUI recognition.
 
-Input shape:
-
-    [1, 63]
-
-or:
-
-    [1, 42]
-
-## Image model contract
-
-Input shape:
-
-    [1, 3, 224, 224]
-
-or:
-
-    [1, 224, 224, 3]
-
-labels.txt line order must match model output class order.
+`scripts/download_models.py` downloads the Piper voice into `models/tts/`; it does not download or train the ASL classifier.

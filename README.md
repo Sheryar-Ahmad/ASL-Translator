@@ -59,31 +59,31 @@ The pipeline is intentionally decoupled: `asl_engine.py` owns hand tracking and 
 ## Project Structure
 
 ```text
-asl-translator/
-├── app/
-│   ├── asl_engine.py        # MediaPipe + ONNX inference pipeline
-│   ├── config.py            # YAML configuration loader
-│   ├── gui_app.py           # Desktop UI and integration layer
-│   ├── text_buffer.py       # Word/sentence building and auto-commit logic
-│   └── tts_engine.py        # Piper TTS wrapper
+ASL-Translator/
+├── app/                    # Runtime: GUI, recognition, text and speech
 ├── archive/
-│   └── sign_data.csv        # Training dataset for the ASL model
+│   └── sign_data.csv        # Source dataset used for retraining
+├── docs/
+│   └── BUGFIX_REPORT.md     # Audit findings and validation record
 ├── models/
-│   ├── asl/
-│   │   └── asl_landmarks.onnx  # ASL gesture recognition model
-│   └── tts/
-│       └── en_US-lessac-high.onnx   # Piper voice model
-├── scripts/
-│   ├── check_env.py         # Environment/dependency checker
-│   ├── download_models.py   # Piper voice and voice-config downloader
-│   └── train_from_csv.py    # CSV-to-model training script
-├── tests/
-│   └── test_text_buffer.py  # Unit tests for text buffer
-├── config.yaml               # Runtime configuration
-├── main.py                    # CLI entry point
-├── requirements.txt           # Python dependencies
+│   ├── asl/                # Bundled classifier, labels and model notes
+│   └── tts/                # Downloaded Piper .onnx and .onnx.json files
+├── scripts/                # Environment check, voice download and training
+├── tests/                  # Automated regression tests
+├── .gitignore              # Keeps generated/local files out of Git
+├── .python-version         # Python 3.12 for uv
+├── config.yaml             # Camera, recognition and speech settings
+├── main.py                 # CLI and GUI entry point
+├── pyproject.toml          # Project metadata and uv dependencies
+├── uv.lock                 # Reproducible dependency versions
+├── requirements.txt        # Alternative pip runtime dependencies
+├── LICENSE
 └── README.md
 ```
+
+Use `uv sync` to create the local `.venv/` environment. Environments, Python/test caches, temporary speech files, editor completion data and local worktrees are generated locally and excluded from Git. `archive/` is training input, not disposable backup data. The downloaded `models/tts/` directory appears after voice installation.
+
+The README is the main setup and structure guide; model details live in [models/asl/README.md](models/asl/README.md) and the previous audit is in [docs/BUGFIX_REPORT.md](docs/BUGFIX_REPORT.md).
 
 ## Prerequisites
 
@@ -104,6 +104,9 @@ uv sync
 
 # 3. Download the Piper voice model and its matching JSON configuration
 uv run scripts/download_models.py
+
+# 4. Verify the configured models and dependencies
+uv run scripts/check_env.py
 ```
 
 ## Usage

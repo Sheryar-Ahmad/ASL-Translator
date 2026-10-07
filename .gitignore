@@ -1,8 +1,25 @@
+# Local Python environments
 .venv/
+venv/
+
+# Generated Python and test files
 __pycache__/
-*.pyc
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Temporary speech and verification artifacts
 .cache/
+
+# Editor state and local worktrees
+.vscode/PythonImportHelper-v2-Completion.json
+.kilo/
+
+# Downloaded Piper voice assets
 models/tts/*.onnx
 models/tts/*.json
+
+# Operating system metadata
 .DS_Store
-./pytest_cache
+Thumbs.db
