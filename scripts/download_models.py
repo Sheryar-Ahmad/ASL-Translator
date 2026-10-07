@@ -5,7 +5,11 @@ TTS_FILES = [
     (
         "https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_US/lessac/high/en_US-lessac-high.onnx",
         TTS_DIR / "en_US-lessac-high.onnx",
-    )
+    ),
+    (
+        "https://huggingface.co/rhasspy/piper-voices/resolve/main/en/en_US/lessac/high/en_US-lessac-high.onnx.json",
+        TTS_DIR / "en_US-lessac-high.onnx.json",
+    ),
 ]
 
 

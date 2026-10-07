@@ -78,13 +78,14 @@ def run_speak(cfg, text):
     try:
         tts.speak(text)
         tts.wait_idle()
+        if tts.last_error:
+            raise RuntimeError(tts.last_error)
     finally:
         tts.stop()
 
 
 def run_camera(cfg):
     tts = TTSEngine(cfg.get("tts", {}))
-    tts.start()
 
     asl = ASLEngine(cfg.get("asl", {}))
 
@@ -113,17 +114,27 @@ def run_camera(cfg):
         capture = cv2.VideoCapture(camera_index)
 
     if not capture.isOpened():
+        capture.release()
+        asl.close()
+        tts.stop()
         raise RuntimeError(
             f"Cannot open camera index {camera_index}. "
             "Try changing camera.index in config.yaml."
         )
 
     capture.set(cv2.CAP_PROP_FRAME_WIDTH, int(camera_cfg.get("width", 640)))
-    capture.set(cv2.CAP_PROP_FRAME_HEIGHT, int(camera_cfg.get("height", 1000)))
+    capture.set(cv2.CAP_PROP_FRAME_HEIGHT, int(camera_cfg.get("height", 480)))
     capture.set(cv2.CAP_PROP_FPS, int(camera_cfg.get("fps", 30)))
 
     window_name = cfg.get("ui", {}).get("window_name", "ASL Translator")
-    cv2.namedWindow(window_name, cv2.WINDOW_NORMAL)
+    try:
+        cv2.namedWindow(window_name, cv2.WINDOW_NORMAL)
+    except Exception:
+        capture.release()
+        asl.close()
+        tts.stop()
+        raise
+    tts.start()
 
     last_time = time.time()
     fps = 0.0
@@ -191,7 +202,7 @@ def run_camera(cfg):
 
             # Keyboard space inserts space.
             elif key == 32:
-                commit_label("space", 1.0, now_ms)
+                commit_label(text_buffer.space_label, 1.0, now_ms)
 
             # Period key inserts sentence-ending punctuation.
             elif key == ord("."):
@@ -279,7 +290,7 @@ def main():
     if args.gui:
         from app.gui_app import run_gui
 
-        run_gui(cfg)
+        run_gui(cfg, args.config)
     elif args.speak:
         run_speak(cfg, args.speak)
     else:

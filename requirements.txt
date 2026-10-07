@@ -1,6 +1,6 @@
 numpy>=1.24,<2.0
 opencv-python>=4.8
-mediapipe>=0.10.9
+mediapipe==0.10.21
 onnxruntime>=1.16
 piper-tts>=1.2.0
 Pillow>=10.0

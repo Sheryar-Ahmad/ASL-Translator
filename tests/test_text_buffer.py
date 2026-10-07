@@ -69,3 +69,26 @@ def test_auto_commit_controller():
     assert controller.update("b", 0.9, 600) is None
     assert controller.update("b", 0.9, 750) is None
     assert controller.update("b", 0.9, 1000) == "b"
+
+
+def test_empty_and_repeated_spaces_are_not_commits():
+    buffer = TextBuffer()
+    assert not buffer.commit_label("space")
+    buffer.commit_label("a")
+    assert buffer.commit_label("space")
+    assert not buffer.commit_label("space")
+    assert buffer.text == "a"
+
+
+def test_reset_discards_pending_sign_and_cooldown():
+    controller = AutoCommitController({"auto": {"vote_window": 1, "stable_ms": 100, "reset_ms": 100}})
+    controller.update("a", 1, 1000)
+    controller.reset()
+    assert controller.update("a", 1, 2000) is None
+    assert controller.update("a", 1, 2100) == "a"
+
+
+def test_low_confidence_never_commits():
+    controller = AutoCommitController({"auto": {"stable_ms": 10, "reset_ms": 10}})
+    for now in range(0, 1000, 20):
+        assert controller.update("a", .1, now) is None

@@ -43,7 +43,8 @@ class TextBuffer:
         if normalized == self.space_label:
             if self.parts and self.parts[-1] != " ":
                 self.parts.append(" ")
-            return True
+                return True
+            return False
 
         if len(normalized) == 1:
             self.parts.append(normalized)
@@ -59,7 +60,7 @@ class AutoCommitController:
         auto_cfg = asl_cfg.get("auto", {})
         labels_cfg = asl_cfg.get("labels", {})
 
-        self.window = int(auto_cfg.get("vote_window", 9))
+        self.window = max(1, int(auto_cfg.get("vote_window", 9)))
         self.stable_ms = int(auto_cfg.get("stable_ms", 900))
         self.reset_ms = int(auto_cfg.get("reset_ms", 1400))
         self.threshold = float(asl_cfg.get("confidence_threshold", 0.65))
@@ -67,6 +68,13 @@ class AutoCommitController:
 
         self.history = deque(maxlen=self.window)
         self.candidate: Optional[str] = None
+        self.candidate_since = 0
+        self.last_commit = 0
+
+    def reset(self) -> None:
+        """Discard votes when recognition is paused or settings change."""
+        self.history.clear()
+        self.candidate = None
         self.candidate_since = 0
         self.last_commit = 0
 

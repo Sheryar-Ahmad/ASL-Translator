@@ -160,8 +160,8 @@ class ASLEngine:
 
         if self.dummy:
             return {
-                "label": "a",
-                "confidence": 0.90,
+                "label": self.nothing_label,
+                "confidence": 0.0,
                 "hand_present": True,
             }
 
@@ -362,20 +362,39 @@ class ASLEngine:
             {self.input_name: features.astype(np.float32)},
         )
 
-        # sklearn ONNX: outputs[1] is a list of dicts {class_index: probability}
-        probability_map = outputs[1][0]
-        probabilities = np.zeros((1, len(self.labels)), dtype=np.float32)
-
-        for class_index, probability in probability_map.items():
-            if class_index < len(self.labels):
-                probabilities[0, class_index] = float(probability)
-
+        # Accept sklearn ZipMap exports and classifiers with dense scores.
+        scores = outputs[1] if len(outputs) > 1 else outputs[0]
+        if isinstance(scores, list) and scores and isinstance(scores[0], dict):
+            probabilities = np.zeros((len(scores), len(self.labels)), dtype=np.float32)
+            for row, probability_map in enumerate(scores):
+                for key, probability in probability_map.items():
+                    if isinstance(key, str):
+                        if key not in self.labels:
+                            raise ValueError(f"Unknown ONNX class label: {key}")
+                        index = self.labels.index(key)
+                    else:
+                        index = int(key)
+                    if not 0 <= index < len(self.labels):
+                        raise ValueError(f"ONNX class index out of range: {index}")
+                    probabilities[row, index] = float(probability)
+        else:
+            probabilities = np.asarray(scores, dtype=np.float32)
+            if probabilities.ndim == 1:
+                probabilities = probabilities.reshape(1, -1)
+        if probabilities.shape != (features.shape[0], len(self.labels)):
+            raise ValueError("ONNX output shape does not match labels.txt.")
+        if not np.isfinite(probabilities).all():
+            raise ValueError("ONNX output contains non-finite scores.")
+        if (probabilities < 0).any() or not np.allclose(
+            probabilities.sum(axis=1), 1.0, atol=1e-3
+        ):
+            probabilities = self._softmax(probabilities)
         return probabilities
 
     @staticmethod
     def _softmax(values: np.ndarray) -> np.ndarray:
-        exp_values = np.exp(values - np.max(values))
-        return exp_values / (np.sum(exp_values) + 1e-9)
+        exp_values = np.exp(values - np.max(values, axis=-1, keepdims=True))
+        return exp_values / (np.sum(exp_values, axis=-1, keepdims=True) + 1e-9)
 
     def close(self) -> None:
         try:

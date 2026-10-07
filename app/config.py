@@ -1,4 +1,5 @@
 import os
+from copy import deepcopy
 from typing import Any, Dict
 
 import yaml
@@ -62,22 +63,25 @@ DEFAULTS: Dict[str, Any] = {
 
 
 def deep_merge(base: Dict[str, Any], override: Dict[str, Any]) -> Dict[str, Any]:
-    merged = dict(base)
+    merged = deepcopy(base)
 
     for key, value in override.items():
         if key in merged and isinstance(merged[key], dict) and isinstance(value, dict):
             merged[key] = deep_merge(merged[key], value)
         else:
-            merged[key] = value
+            merged[key] = deepcopy(value)
 
     return merged
 
 
 def load_config(path: str = "config.yaml") -> Dict[str, Any]:
     if not os.path.exists(path):
-        return DEFAULTS
+        return deepcopy(DEFAULTS)
 
     with open(path, "r", encoding="utf-8") as handle:
         user_config = yaml.safe_load(handle) or {}
+
+    if not isinstance(user_config, dict):
+        raise ValueError("Configuration must be a YAML mapping.")
 
     return deep_merge(DEFAULTS, user_config)

@@ -44,7 +44,7 @@ The pipeline is intentionally decoupled: `asl_engine.py` owns hand tracking and 
 
 | Layer | Technology |
 |---|---|
-| Language | Python 3.11+ |
+| Language | Python 3.12 |
 | Hand tracking | MediaPipe |
 | Inference | ONNX Runtime |
 | Computer vision / capture | OpenCV (`opencv-python`) |
@@ -70,12 +70,12 @@ asl-translator/
 │   └── sign_data.csv        # Training dataset for the ASL model
 ├── models/
 │   ├── asl/
-│   │   └── asl_landmarks.onnx.onnx  # ASL gesture recognition model
+│   │   └── asl_landmarks.onnx  # ASL gesture recognition model
 │   └── tts/
 │       └── en_US-lessac-high.onnx   # Piper voice model
 ├── scripts/
 │   ├── check_env.py         # Environment/dependency checker
-│   ├── download_models.py   # Model downloader
+│   ├── download_models.py   # Piper voice and voice-config downloader
 │   └── train_from_csv.py    # CSV-to-model training script
 ├── tests/
 │   └── test_text_buffer.py  # Unit tests for text buffer
@@ -87,7 +87,7 @@ asl-translator/
 
 ## Prerequisites
 
-- Python 3.11+
+- Python 3.12
 - [`uv`](https://docs.astral.sh/uv/)
 - A webcam
 - An audio output device
@@ -96,13 +96,13 @@ asl-translator/
 
 ```bash
 # 1. Clone the repository
-git clone [ADD REPOSITORY URL]
-cd asl-translator
+git clone https://github.com/Sheryar-Ahmad/ASL-Translator.git
+cd ASL-Translator
 
 # 2. Install dependencies
 uv sync
 
-# 3. Download required models (ONNX classifier + Piper voice)
+# 3. Download the Piper voice model and its matching JSON configuration
 uv run scripts/download_models.py
 ```
 
@@ -118,6 +118,17 @@ uv run main.py
 # Speak a string directly and exit (useful for testing the TTS engine)
 uv run main.py --speak "Hello world"
 ```
+
+### Desktop controls
+
+The window supports compact screens and keeps the camera preview in its original aspect ratio. The Translate tab shows recognition and speech controls; Settings contains confidence, timing, automatic speech, and camera selection. Both tabs scroll on shorter screens.
+
+- `F5`: start recognition; `Esc`: pause.
+- `Ctrl+Space`: insert a space; `Ctrl+Backspace`: delete.
+- `Ctrl+Enter`: speak the sentence.
+- Copy and Clear act on the sentence; Cancel speech stops playback and clears queued speech.
+
+Settings save automatically to the file supplied through `--config` (or `config.yaml`). If the camera fails, select an index in Settings and click Apply / Retry. Missing voice files and synthesis/playback errors appear in the Speech area.
 
 ## Configuration
 
@@ -148,7 +159,8 @@ uv run pytest
 
 - Recognition accuracy depends on lighting, camera angle, and hand visibility, as with any MediaPipe-based hand-tracking pipeline.
 - Currently supports a single active hand/gesture set trained from `sign_data.csv`; expanding the sign vocabulary requires retraining.
-- [ADD PROJECT ROADMAP ITEMS]
+- Missing ASL models disable recognition; use `uv run scripts/train_from_csv.py` to train a replacement.
+- Python 3.12 is required by the currently pinned MediaPipe release.
 
 ## FAQ
 
@@ -162,7 +174,7 @@ It gives sign-language users a way to have their signs spoken aloud in real time
 Python, MediaPipe for hand tracking, a self-trained ONNX classifier for gesture recognition, and Piper for offline text-to-speech.
 
 **Does it require an internet connection?**
-Only once, to download the model files via `scripts/download_models.py`. After that, recognition and speech run fully offline.
+Only once, to install dependencies and download the Piper voice files via `scripts/download_models.py`. After that, recognition and speech run fully offline.
 
 **How do I install and run it?**
 Install [`uv`](https://docs.astral.sh/uv/), run `uv sync`, download the models, then run `uv run main.py --gui`. See [Installation](#installation) and [Usage](#usage).
